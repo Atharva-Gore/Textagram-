@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>📝 Textagram</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📝 Textagram</h1>
+
+  <div class="creator">
+    <textarea id="textInput" placeholder="Write something..."></textarea>
+    
+    <div class="controls">
+      <label>🎨 Background:
+        <select id="bgSelect">
+          <option value="bg1">Sunset</option>
+          <option value="bg2">Ocean</option>
+          <option value="bg3">Forest</option>
+          <option value="bg4">Night</option>
+        </select>
+      </label>
+
+      <label>🖍 Text Color:
+        <input type="color" id="textColor" value="#ffffff" />
+      </label>
+
+      <button onclick="createPost()">➕ Post</button>
+    </div>
+  </div>
+
+  <div id="feed" class="feed"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
